@@ -18,7 +18,7 @@ body {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0rem;
     font-family: zapfino;
   }
@@ -101,10 +101,15 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between icons */
+    gap: 50px; /* Space between icons */
     flex-wrap: wrap; /* Wrap icons on smaller screens */
-    
-    
+       
+}
+
+.social-icons i {
+    font-size: 35px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none;
 }
   
 /* Social icons links */
@@ -136,13 +141,22 @@ body {
         padding: 8px;
     }
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .social-icons a {
         font-size: 20px; /* Reduce icon size */
+    }
+    .social-icons i {
+        font-size: 20px; /* Reduce icon size */
+    }
+    .social-icons {
+        gap: 20px; /* Reduce spacing between icons */
+    }
+    .btn i {
+        font-size: 1.2rem;
     }
     .footer {
         padding: 15px 0; /* Adjust padding */
@@ -151,10 +165,10 @@ body {
 
 @media (max-width: 1024px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
     p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .stream {
         font-size: 1.4rem;
@@ -166,6 +180,15 @@ body {
     .btn {
         font-size: 0.95rem;
         padding: 0.7rem 1.2rem;
+    }
+    .social-icons {
+        gap: 20px; /* Reduce spacing between icons */
+    }
+    .social-icons a {
+        font-size: 20px; /* Further reduce icon size */
+    }
+    .social-icons i {
+        font-size: 20px; /* Reduce icon size */
     }
 }
 
@@ -188,9 +211,15 @@ body {
         padding: 0.6rem 1rem;
     }
     .social-icons {
-        gap: 10px; /* Reduce spacing between icons */
+        gap: 20px; /* Reduce spacing between icons */
     }
     .social-icons a {
         font-size: 18px; /* Further reduce icon size */
+    }
+    .social-icons i {
+        font-size: 20px; /* Reduce icon size */
+    }
+    .social-icons {
+        gap: 20px; /* Reduce spacing between icons */
     }
 }
